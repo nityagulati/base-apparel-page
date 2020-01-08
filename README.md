@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel Coming Soon Page
 
-![Header/intro section for the Huddle landing page with single column layout](./design/desktop-preview.jpg)
+![Header/intro section for the Huddle landing page with single column layout](/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
