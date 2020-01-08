@@ -45,7 +45,7 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -199,12 +199,12 @@ body {
 .main-form__email {
   border: 1px solid #ce9797;
   border-radius: 30px;
-  -webkit-box-flex: 1;
-  flex: 1 1 75%;
-  padding: 3% 8%;
   color: #ce9797;
   font-size: 1rem;
   opacity: 0.5;
+  -webkit-box-flex: 1;
+  flex: 1 1 75%;
+  padding: 3% 8%;
 }
 @media screen and (min-width: 1600px) {
   .main-form__email {
@@ -242,7 +242,7 @@ body {
 }
 .main-form__error {
   color: #f96262;
-  font-size: 11px;
+  font-size: 0.75rem;
   padding-left: 5%;
 }
 
