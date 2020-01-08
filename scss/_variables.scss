@@ -1,0 +1,34 @@
+// btn icons
+$btn-icon-reg: "images/icon-arrow.svg";
+$btn-icon-err: "images/icon-error.svg";
+
+// colors
+$bg-gradient: linear-gradient(135deg, hsl(0, 0, 100%), hsl(0, 100%, 98%));
+$btn-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$grayish-red: hsl(0, 6%, 24%);
+$primary-blue: hsl(228, 45%, 44%);
+$primary-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$titleColor: #000;
+
+// font family
+$font-stack: 'Josefin Sans', sans-serif;
+
+// font sizes
+$base-font-size: 16px;
+$font-reset: 1rem;
+$font-size-large: 2rem;
+$font-size-med: 1.5rem;
+$font-size-small: 11px;
+$font-size-xlarge: 2.5rem;
+$font-size-xxlarge: 3.5rem;
+
+// font weights
+$font-weight-bold: 600;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+
+// hero images
+$bg-pattern-img: "images/bg-pattern-desktop.svg";
+$hero-desktop-img: "images/hero-desktop.jpg";
+$hero-mobile-img: "images/hero-mobile.jpg";

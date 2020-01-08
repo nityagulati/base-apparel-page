@@ -1,0 +1,75 @@
+// button settings
+@mixin btn-bg-error() {
+  background-image: url("#{$btn-icon-err}");
+}
+
+@mixin btn-bg-gradient() {
+  background-image: url("#{$btn-icon-reg}"), $btn-gradient;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin btn-hover() {
+  background-image: url("#{$btn-icon-reg}");
+  background-color: $soft-red;
+}
+
+@mixin btn-hover-error() {
+  background-color: #fff;
+}
+
+@mixin btn-settings() {
+  border: none;
+  border-left: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 14px -2px $soft-red;
+  margin-left: -2.5rem;
+  padding: 3% 8%;
+}
+
+// email settings
+@mixin email-settings() {
+  border: 1px solid $primary-red;
+  border-radius: 30px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 3% 8%;
+}
+
+// gradients
+@mixin bg-settings() {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin body-bg-gradient() {
+  background-image: url("#{$bg-pattern-img}"), $bg-gradient;
+}
+
+// grid settings
+@mixin grid-settings() {
+  display: grid;
+  grid-template: repeat(3, auto) / 60% 40%;
+  grid-template-areas: "header hero" "content hero" "footer hero";
+}
+
+// hero image settings
+@mixin hero-desk-settings() {
+  background-image: url("#{$hero-desktop-img}");
+  background-position: center;
+  grid-area: hero;
+  height: 100%;
+}
+
+@mixin hero-mob-settings() {
+  background-image: url("#{$hero-mobile-img}");
+}
+
+// placeholder prefixes
+@mixin placeholder() {
+    &::-webkit-input-placeholder {@content;}
+    &::-moz-placeholder          {@content;}
+    &:-ms-input-placeholder      {@content;}
+    &::-ms-input-placeholder     {@content;}
+    &::placeholder               {@content;}
+}
