@@ -1,6 +1,7 @@
 // button settings
 @mixin btn-bg-error() {
   background-image: url("#{$btn-icon-err}");
+  background-position: center;
 }
 
 @mixin btn-bg-gradient() {
@@ -23,8 +24,14 @@
   border-left: 0;
   border-radius: 30px;
   box-shadow: 0 0 14px -2px $soft-red;
-  margin-left: -2.5rem;
+  margin-left: -2rem;
+  outline: none;
   padding: 3% 8%;
+  z-index: 0;
+
+  @media screen and (min-width: 568px) {
+    margin-left: -3rem;
+  }
 }
 
 // email settings
@@ -32,8 +39,21 @@
   border: 1px solid $primary-red;
   border-radius: 30px;
   -webkit-box-flex: 1;
-  flex: 1;
+          flex: 1 1 75%;
   padding: 3% 8%;
+
+  @media screen and (min-width: 1600px) {
+    -webkit-box-flex: 1;
+            flex: 1 1 70%;
+  }
+}
+
+// form settings
+@mixin form-settings() {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8%;
 }
 
 // gradients
@@ -67,9 +87,9 @@
 
 // placeholder prefixes
 @mixin placeholder() {
-    &::-webkit-input-placeholder {@content;}
-    &::-moz-placeholder          {@content;}
-    &:-ms-input-placeholder      {@content;}
-    &::-ms-input-placeholder     {@content;}
-    &::placeholder               {@content;}
+    &::-webkit-input-placeholder { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }
+    &::-ms-input-placeholder     { @content; }
+    &::placeholder               { @content; }
 }

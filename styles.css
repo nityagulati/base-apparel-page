@@ -52,6 +52,9 @@ body {
 .attribution__link {
   color: #3e52a3;
 }
+.attribution__link:hover {
+  color: #677ac5;
+}
 
 .hero-section {
   background-repeat: no-repeat;
@@ -164,34 +167,50 @@ body {
   border-left: 0;
   border-radius: 30px;
   box-shadow: 0 0 14px -2px #f96262;
-  margin-left: -2.5rem;
+  margin-left: -2rem;
+  outline: none;
   padding: 3% 8%;
   z-index: 0;
 }
-.main-form__btn:focus {
-  outline: none;
+@media screen and (min-width: 568px) {
+  .main-form__btn {
+    margin-left: -3rem;
+  }
 }
 .main-form__btn:hover {
   background-image: url("images/icon-arrow.svg");
   background-color: #f96262;
 }
+@media (hover: none) {
+  .main-form__btn:hover {
+    background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 .main-form__btn.btnStateErr {
   background-image: url("images/icon-error.svg");
+  background-position: center;
+  background-color: #fff;
 }
-.main-form__btn.btnStateErr:hover {
+.main-form__btn.btnStateErr:visited .main-form__btn.btnStateErr:hover .main-form__btn.btnStateErr:focus .main-form__btn.btnStateErr:active {
   background-color: #fff;
 }
 .main-form__email {
   border: 1px solid #ce9797;
   border-radius: 30px;
   -webkit-box-flex: 1;
-  flex: 1;
+  flex: 1 1 75%;
   padding: 3% 8%;
   color: #ce9797;
   font-size: 1rem;
-  -webkit-box-flex: 1;
-  flex: 1 1 75%;
   opacity: 0.5;
+}
+@media screen and (min-width: 1600px) {
+  .main-form__email {
+    -webkit-box-flex: 1;
+    flex: 1 1 70%;
+  }
 }
 .main-form__email::-webkit-input-placeholder {
   color: #ce9797;
